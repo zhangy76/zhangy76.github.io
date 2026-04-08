@@ -2,217 +2,233 @@
 
 <head>
   <title>Yufei Zhang - Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D41DLSC2BJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-D41DLSC2BJ');
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style type="text/css" media="screen">
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    font,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    tt,
-    var,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td {
-      border: 0pt none;
-      font-family: inherit;
-      font-size: 100%;
-      font-style: inherit;
-      font-weight: inherit;
-      margin: 0pt;
-      outline-color: invert;
-      outline-style: none;
-      outline-width: 0pt;
-      padding: 0pt;
-      vertical-align: baseline;
-    }
-
-    a {
-      color: #1772d0;
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
-    }
-
-    a.paper {
-      font-weight: bold;
-      font-size: 12pt;
-    }
-
-    b.paper {
-      font-weight: bold;
-      font-size: 12pt;
-    }
-
-    * {
-      margin: 0pt;
-      padding: 0pt;
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      position: relative;
-      margin: 3em auto 2em auto;
-      width: 1080px;
-      font-family: Lato, Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-      background: #eee;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #2d3748;
+      background: #f7f8fa;
+      -webkit-font-smoothing: antialiased;
     }
 
-    h2 {
-      font-family: Lato, Verdana, Helvetica, sans-serif;
-      font-size: 16pt;
-      font-weight: 700;
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5em 1.5em;
     }
 
-    h4 {
-      font-family: Lato, Verdana, Helvetica, sans-serif;
-      font-size: 13pt;
-      font-weight: 700;
+    a {
+      color: #2b6cb0;
+      text-decoration: none;
+      transition: color 0.2s;
     }
 
-    h3 {
-      font-family: Lato, Verdana, Helvetica, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
+    a:hover {
+      color: #e6770a;
     }
 
-    strong {
-      font-family: Lato, Verdana, Helvetica, sans-serif;
-      font-size: 14px;
+    strong, b {
+      font-weight: 600;
     }
 
-    ul {
-      list-style: circle;
-    }
-
-    img {
-      border: none;
-    }
-
-    li {
-      padding-bottom: 0.5em;
-      margin-left: 1.4em;
-    }
-
-    strong,
-    b {
-      font-weight: bold;
-    }
-
-    em,
-    i {
+    em, i {
       font-style: italic;
     }
 
-    div.section {
-      clear: both;
-      margin-bottom: 2em;
-      background: #eee;
-    }
-
-    div.spanner {
-      clear: both;
-    }
-
-    div.paper {
-      clear: both;
-      margin-top: 0.3em;
-      margin-bottom: 0.3em;
-      border: 1px solid #ddd;
+    /* ── Hero / Bio Card ── */
+    .hero {
       background: #fff;
-      padding: 1em 1em 1em 1em;
+      border-radius: 12px;
+      padding: 2.5em;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+      margin-bottom: 2.5em;
     }
 
-    div.paper div {
-      padding-left: 230px;
+    .hero-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5em;
     }
 
-    div.paper div.wide {
-      padding-right: 0px;
+    .hero-photo {
+      flex-shrink: 0;
     }
 
-    img.paper {
+    .hero-photo img {
+      width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .hero-text h1 {
+      font-size: 1.8em;
+      font-weight: 700;
       margin-bottom: 0.5em;
-      float: left;
-      width: 200px;
+      color: #1a202c;
     }
 
-    span.blurb {
+    .hero-text p {
+      font-size: 1em;
+      margin-bottom: 0.7em;
+    }
+
+    .hero-links {
+      margin-top: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3em 1.2em;
+    }
+
+    .hero-links a {
+      font-weight: 500;
+    }
+
+    /* ── Research Statement ── */
+    .research-statement {
+      margin-top: 1.5em;
+      padding: 0.9em 1.2em;
+      border-left: 3px solid #2b6cb0;
+      background: #f7fafc;
+      border-radius: 0 6px 6px 0;
+      color: #4a5568;
+      font-size: 0.95em;
+      line-height: 1.7;
+    }
+
+    /* ── Section Headings ── */
+    .section-title {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 1em;
+      padding-bottom: 0.4em;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    /* ── Publication Cards ── */
+    .section {
+      margin-bottom: 2.5em;
+    }
+
+    .pub-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.8em;
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5em;
+      margin-bottom: 0.8em;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+
+    .pub-card:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    }
+
+    .pub-img {
+      flex-shrink: 0;
+      width: 280px;
+      display: flex;
+      align-items: center;
+    }
+
+    .pub-img img {
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .pub-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .pub-info .pub-title {
+      font-weight: 600;
+      font-size: 1.05em;
+      margin-bottom: 0.4em;
+      color: #1a202c;
+    }
+
+    .pub-info .pub-authors {
+      font-size: 0.95em;
+      margin-bottom: 0.15em;
+    }
+
+    .pub-info .pub-venue {
       font-style: italic;
-      display: block;
-      margin-top: 0.75em;
+      font-size: 0.95em;
+      color: #718096;
       margin-bottom: 0.5em;
     }
 
-    pre,
-    code {
-      font-family: 'Lucida Console', 'Andale Mono', 'Courier', monospaced;
-      margin: 1em 0;
-      padding: 0;
+    .pub-info .pub-links {
+      font-size: 0.93em;
     }
 
-    div.paper pre {
-      font-size: 0.9em;
+    .pub-info .pub-links a {
+      margin-right: 0.6em;
+      font-weight: 500;
+    }
+
+    .self-author {
+      font-weight: 700;
+      color: #b83232;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: right;
+      font-size: 0.8em;
+      color: #a0aec0;
+      margin-top: 1em;
+    }
+
+    .footer a {
+      color: #a0aec0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 740px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2em 1.5em;
+      }
+      .hero-links {
+        justify-content: center;
+      }
+      .pub-card {
+        flex-direction: column;
+      }
+      .pub-img {
+        width: 100%;
+      }
     }
   </style>
 
@@ -220,195 +236,154 @@
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-7953909-1']);
     _gaq.push(['_trackPageview']);
-
     (function () {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-
-  <link href="./page_files/css" rel="stylesheet" type="text/css">
-  <style id="style-1-cropbar-clipper">
-    /* Copyright 2014 Evernote Corporation. All rights reserved. */
-    .en-markup-crop-options {
-      top: 18px !important;
-      left: 50% !important;
-      margin-left: -100px !important;
-      width: 200px !important;
-      border: 2px rgba(255, 255, 255, .38) solid !important;
-      border-radius: 4px !important;
-    }
-
-    .en-markup-crop-options div div:first-of-type {
-      margin-left: 0px !important;
-    }
-  </style>
 </head>
 
 <body>
+  <div class="container">
 
-  <div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 250px;">
-    <div style="margin: 0 auto; width: 100%; line-height: 100%;">
-      <img title="YufeiZhang" style="float: right; padding-right: 2.0em; margin-left: 1em; height: 250px;" src="figures/Yufei_PhD.jpeg" />
-      <div style="padding-left: 2em; vertical-align: top; height: 250px;">
-        <div style="padding-left: 22em; margin-bottom: 2em">
-        <span style="font-size: 18pt; line-height: 250%; font-weight:bold">Yufei Zhang</span> 
+    <!-- ── Hero ── -->
+    <div class="hero">
+      <div class="hero-row">
+        <div class="hero-photo">
+          <img title="Yufei Zhang" src="figures/Yufei_PhD.jpeg" alt="Yufei Zhang" />
         </div>
-        <div style="padding-left: 0; margin-bottom: 1em;">
-          I am a Senior AI Research Scientist at <a href="https://www.bytedance.com/en/">ByteDance Inc</a>, working with the <a href="https://www.picoxr.com/global">PICO</a> team.
+        <div class="hero-text">
+          <h1>Yufei Zhang</h1>
+          <p>
+            I am a Senior Research Scientist at <a href="https://www.bytedance.com/en/">ByteDance Inc</a>, working with the <a href="https://www.picoxr.com/global">PICO</a> team.
+          </p>
+          <p>
+            I graduated from <a href="https://www.rpi.edu/" target="_blank">Rensselaer Polytechnic Institute</a> and <a href="https://en.xjtu.edu.cn/" target="_blank">Xi'an Jiaotong University</a>.
+            Previously, I was at <a href="https://myolab.ai/" target="_blank">MyoLab AI</a>, <a href="https://www.meta.com/research/" target="_blank">Meta Reality Labs</a>, and <a href="https://aws.amazon.com/" target="_blank">Amazon AWS</a>.
+          </p>
+          <p>
+            I build <strong>Human-Embodied AI</strong> that perceives, understands, and emulates human behavior. My research integrates <strong>Physics</strong> and <strong>Probabilistic Modeling</strong> into scalable learning systems.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:yufeizhang96@outlook.com" target="_blank">Email</a>
+            <a href="https://github.com/zhangy76" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yufei-zhang-4b7b69152" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=gtVCkSgAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://twitter.com/YufeiZhang0000" target="_blank">Twitter</a>
+          </div>
         </div>
-        <div style="padding-left: 0; margin-bottom: 1em;">
-          I aim to build <strong>Human-Embodied AI</strong> capable of perceiving, understanding, and emulating human behavior. 
-          My research integrates <strong>Physics</strong> (e.g., biomechanics) and <strong>Probabilistic Modeling</strong> (e.g., uncertainty estimation) into scalable data-driven systems. 
-        </div>
-        <div style="padding-left: 2em; margin-top: 2em"></div>
-        <a href="yufeizhang96@outlook.com" target="_blank">Email</a> |
-        <a href="https://github.com/zhangy76" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/yufei-zhang-4b7b69152" target="_blank">Linkedin</a> |
-        <a href="https://scholar.google.com/citations?user=gtVCkSgAAAAJ&hl=en" target="_blank">Google Scholar</a> |
-        <a href="https://twitter.com/YufeiZhang0000" target="_blank">Twitter</a>
-        </div>
+      </div>
     </div>
+
+    <!-- ── Publications ── -->
+    <div class="section">
+      <h2 class="section-title">Selected Publications</h2>
+
+      <div class="pub-card" id="VideoHand">
+        <div class="pub-img">
+          <img src="./figures/VideoHand.png" alt="VideoHand" />
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">Diffusion-based 3D Hand Motion Recovery with Intuitive Physics</div>
+          <div class="pub-authors"><span class="self-author">Yufei Zhang</span>, Zijun Cui, Jeffrey O. Kephart, Qiang Ji</div>
+          <div class="pub-venue">ICCV, 2025</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Diffusion-based_3D_Hand_Motion_Recovery_with_Intuitive_Physics_ICCV_2025_paper.pdf" target="_blank">Paper</a>
+            <a href="https://openaccess.thecvf.com/content/ICCV2025/supplemental/Zhang_Diffusion-based_3D_Hand_ICCV_2025_supplemental.pdf" target="_blank">SupMat</a>
+            <a href="https://github.com/zhangy76/DIP-Hand" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card" id="ImageHand">
+        <div class="pub-img">
+          <img src="./figures/ImageHand.png" alt="ImageHand" />
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">Weakly-Supervised 3D Hand Reconstruction with Knowledge Prior and Uncertainty Guidance</div>
+          <div class="pub-authors"><span class="self-author">Yufei Zhang</span>, Jeffrey O. Kephart, Qiang Ji</div>
+          <div class="pub-venue">ECCV, 2024</div>
+          <div class="pub-links">
+            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10017.pdf" target="_blank">Paper</a>
+            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10017-supp.pdf" target="_blank">SupMat</a>
+            <a href="https://github.com/zhangy76/KNOWN-Hand" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card" id="PhysPT">
+        <div class="pub-img">
+          <img src="./figures/PhysPT.png" alt="PhysPT" />
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">PhysPT: Physics-aware Pretrained Transformer for Estimating Human Dynamics from Monocular Videos</div>
+          <div class="pub-authors"><span class="self-author">Yufei Zhang</span>, Jeffrey O. Kephart, Zijun Cui, Qiang Ji</div>
+          <div class="pub-venue">CVPR, 2024</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_PhysPT_Physics-aware_Pretrained_Transformer_for_Estimating_Human_Dynamics_from_Monocular_CVPR_2024_paper.pdf" target="_blank">Paper</a>
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/supplemental/Zhang_PhysPT_Physics-aware_Pretrained_CVPR_2024_supplemental.pdf" target="_blank">SupMat</a>
+            <a href="https://github.com/zhangy76/PhysPT" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card" id="PhysMoP">
+        <div class="pub-img">
+          <img src="./figures/PhysMoP.png" alt="PhysMoP" />
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">Incorporating Physics Principles for Precise Human Motion Prediction</div>
+          <div class="pub-authors"><span class="self-author">Yufei Zhang</span>, Jeffrey O. Kephart, Qiang Ji</div>
+          <div class="pub-venue">WACV, 2024</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zhang_Incorporating_Physics_Principles_for_Precise_Human_Motion_Prediction_WACV_2024_paper.pdf" target="_blank">Paper</a>
+            <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zhang_Incorporating_Physics_Principles_WACV_2024_supplemental.pdf" target="_blank">SupMat</a>
+            <a href="https://github.com/zhangy76/PhysMoP" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card" id="KNOWN">
+        <div class="pub-img">
+          <img src="./figures/KNOWN.png" alt="KNOWN" />
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">Body Knowledge and Uncertainty Modeling for Monocular 3D Human Body Reconstruction</div>
+          <div class="pub-authors"><span class="self-author">Yufei Zhang</span>, Hanjing Wang, Jeffrey O. Kephart, Qiang Ji</div>
+          <div class="pub-venue">ICCV, 2023</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Body_Knowledge_and_Uncertainty_Modeling_for_Monocular_3D_Human_Body_ICCV_2023_paper.pdf" target="_blank">Paper</a>
+            <a href="https://openaccess.thecvf.com/content/ICCV2023/supplemental/Zhang_Body_Knowledge_and_ICCV_2023_supplemental.pdf" target="_blank">SupMat</a>
+            <a href="https://github.com/zhangy76/KNOWN" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card" id="RPF">
+        <div class="pub-img">
+          <img src="./figures/RPF.png" alt="RPF" />
+        </div>
+        <div class="pub-info">
+          <div class="pub-title">Robust Partial Fingerprint Recognition</div>
+          <div class="pub-authors"><span class="self-author">Yufei Zhang</span>, Rui Zhao, Ziyi Zhao, Naveen Ramakrishnan, Manoj Aggarwal, Gerard Medioni, Qiang Ji</div>
+          <div class="pub-venue">CVPR Biometrics Workshop, 2023</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2023W/Biometrics/papers/Zhang_Robust_Partial_Fingerprint_Recognition_CVPRW_2023_paper.pdf" target="_blank">Paper</a>
+            <a href="https://openaccess.thecvf.com/content/CVPR2023W/Biometrics/supplemental/Zhang_Robust_Partial_Fingerprint_CVPRW_2023_supplemental.pdf" target="_blank">SupMat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <p>Last updated: Apr 2026</p>
+    </div>
+
   </div>
-
-    <div class="section">
-      <h2 id="reports " style="margin-left: 2em;">Selected Publications</h2>
-
-      <div class="paper" id="VideoHand">
-        <img title="VideoHand" style="float: left; padding-left: 0.0em; padding-right: .0em; width: 360px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);" src="./figures/VideoHand.png" />
-        <div style="position: relative; left: 2em; top: 1em;"> 
-          <strong>Diffusion-based 3D Hand Motion Recovery with Intuitive Physics</strong> <br /> 
-          <br />
-          <span style="line-height: 200%;">
-          <span style="font-weight: bold; color: #bd0000;">Yufei Zhang</span>, Zijun Cui, Jeffrey O. Kephart, Qiang Ji <br />
-          <em>ICCV, 2025</em> <br />
-          <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Diffusion-based_3D_Hand_Motion_Recovery_with_Intuitive_Physics_ICCV_2025_paper.pdf" target="_blank"> Paper </a> | 
-          <a href="https://openaccess.thecvf.com/content/ICCV2025/supplemental/Zhang_Diffusion-based_3D_Hand_ICCV_2025_supplemental.pdf" target="_blank"> SupMat </a> | 
-          <a href="https://github.com/zhangy76/DIP-Hand" target="_blank"> Code </a> 
-          </span><br />
-        </div>
-        <div class="spanner"></div>
-      </div>
-
-      <div class="paper" id="ImageHand">
-        <img title="ImageHand" style="float: left; padding-left: 0.0em; padding-right: .0em; width: 360px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);" src="./figures/ImageHand.png" />
-        <div style="position: relative; left: 2em; top: 1em;"> 
-          <strong>Weakly-Supervised 3D Hand Reconstruction with Knowledge Prior and Uncertainty Guidance</strong> <br /> 
-          <br />
-          <span style="line-height: 200%;">
-          <span style="font-weight: bold; color: #bd0000;">Yufei Zhang</span>, Jeffrey O. Kephart, Qiang Ji <br />
-          <em>ECCV, 2024</em> <br />
-          <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10017.pdf" target="_blank"> Paper </a> | 
-          <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10017-supp.pdf" target="_blank"> SupMat </a> | 
-          <a href="https://github.com/zhangy76/KNOWN-Hand" target="_blank"> Code </a>
-          </span><br />
-        </div>
-        <div class="spanner"></div>
-      </div>
-
-      <div class="paper" id="PhysPT">
-        <img title="PhysPT" style="float: left; padding-left: 0.0em; padding-right: .0em; width: 360px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);" src="./figures/PhysPT.png" />
-        <div style="position: relative; left: 2em; top: 1em; margin-right: 2em;">
-          <strong>PhysPT: Physics-aware Pretrained Transformer for Estimating Human Dynamics from Monocular Videos</strong> <br /> 
-          <br />
-          <span style="line-height: 200%;">
-          <span style="font-weight: bold; color: #bd0000;">Yufei Zhang</span>, Jeffrey O. Kephart, Zijun Cui, Qiang Ji <br />
-          <em>CVPR, 2024</em> <br />
-          <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_PhysPT_Physics-aware_Pretrained_Transformer_for_Estimating_Human_Dynamics_from_Monocular_CVPR_2024_paper.pdf" target="_blank"> Paper </a> | 
-          <a href="https://openaccess.thecvf.com/content/CVPR2024/supplemental/Zhang_PhysPT_Physics-aware_Pretrained_CVPR_2024_supplemental.pdf" target="_blank"> SupMat </a> | 
-          <a href="https://github.com/zhangy76/PhysPT" target="_blank"> Code </a> 
-          </span><br />
-        </div>
-        <div class="spanner"></div>
-      </div>
-
-      <div class="paper" id="PhysMoP">
-        <img title="PhysMoP" style="float: left; padding-left: 0.0em; padding-right: .0em; width: 360px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);", src="./figures/PhysMoP.png" />
-        <div style="position: relative; left: 2em; top: 1em; margin-right: 2em;">
-          <strong>Incorporating Physics Principles for Precise Human Motion Prediction</strong> <br /> 
-          <br />
-          <span style="line-height: 200%;"> 
-          <span style="font-weight: bold; color: #bd0000;">Yufei Zhang</span>, Jeffrey O. Kephart, Qiang Ji <br />
-          <em>WACV, 2024</em> <br />
-          <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Zhang_Incorporating_Physics_Principles_for_Precise_Human_Motion_Prediction_WACV_2024_paper.pdf" target="_blank"> Paper </a> | 
-          <a href="https://openaccess.thecvf.com/content/WACV2024/supplemental/Zhang_Incorporating_Physics_Principles_WACV_2024_supplemental.pdf" target="_blank"> SupMat </a> | 
-          <a href="https://github.com/zhangy76/PhysMoP" target="_blank"> Code </a> 
-          </span><br />
-        </div>
-        <div class="spanner"></div>
-      </div>
-
-      <div class="paper" id="KNOWN">
-        <img title="KNOWN" style="float: left; padding-left: 0.0em; padding-right: .0em; width: 360px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);", src="./figures/KNOWN.png" />
-        <div style="position: relative; left: 2em; top: 1em; margin-right: 2em;">
-          <strong>Body Knowledge and Uncertainty Modeling for Monocular 3D Human Body Reconstruction</strong> <br />
-          <br />
-          <span style="line-height: 200%;"> 
-          <span style="font-weight: bold; color: #bd0000;">Yufei Zhang</span>, Hanjing Wang, Jeffrey O. Kephart, Qiang Ji <br />
-          <em>ICCV, 2023</em> <br />
-          <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Body_Knowledge_and_Uncertainty_Modeling_for_Monocular_3D_Human_Body_ICCV_2023_paper.pdf" target="_blank"> Paper </a> | 
-          <a href="https://openaccess.thecvf.com/content/ICCV2023/supplemental/Zhang_Body_Knowledge_and_ICCV_2023_supplemental.pdf" target="_blank"> SupMat </a> | 
-          <a href="https://github.com/zhangy76/KNOWN" target="_blank"> Code </a> 
-          </span><br />
-        </div>
-        <div class="spanner"></div>
-      </div>
-
-      <div class="paper" id="RPF">
-        <img title="RPF" style="float: left; padding-left: 0.0em; padding-right: .0em; width: 360px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);", src="./figures/RPF.png" />
-        <div style="position: relative; left: 2em; top: 1em; margin-right: 2em;">
-          <strong>Robust Partial Fingerprint Recognition</strong> <br /> 
-          <br />
-          <span style="line-height: 200%;">
-          <span style="font-weight: bold; color: #bd0000;">Yufei Zhang</span>, Rui Zhao, Ziyi Zhao, Naveen Ramakrishnan, Manoj Aggarwal, Gerard Medioni, Qiang Ji <br />
-          <em>CVPR Biometrics Workshop, 2023</em> <br />
-          <a href="https://openaccess.thecvf.com/content/CVPR2023W/Biometrics/papers/Zhang_Robust_Partial_Fingerprint_Recognition_CVPRW_2023_paper.pdf" target="_blank"> Paper </a> | 
-          <a href="https://openaccess.thecvf.com/content/CVPR2023W/Biometrics/supplemental/Zhang_Robust_Partial_Fingerprint_CVPRW_2023_supplemental.pdf" target="_blank"> SupMat </a>
-          </span><br />
-        </div>
-        <div class="spanner"></div>
-      </div>
-    </div>
-    <div class="section">
-      <h2 id="reports" style="margin-left: 2em;">Projects</h2>
-      <div class="paper" id="projects">
-        <li><strong>High-fidelity Hand Motion Generation and Retargeting</strong> <br />
-        Research Scientist Intern at <span style="font-weight: bold;">Meta Reality Labs</span>, 2024 Summer<br />
-        Mentor: Priyamvad Deshmukh. </li>
-        <li><strong>Robust Biometrics Identification under Occlusion</strong> <br />
-        Research Scientist Intern at <span style="font-weight: bold;">Amazon One (AWS)</span>, 2022 Summer<br />
-        Mentor: Rui Zhao, Ziyi Zhao. </li>
-        <li><strong>Environment-driven Conceptual Learning </strong> <br />
-          Research Assistant, <span style="font-weight: bold;">Boston Fusion Company</span>, 2023 Summer <br />
-          </li>
-        <li><strong>Vision-based Automatic Surgery Performance Evaluation </strong> <br />
-          Research Assistant, <span style="font-weight: bold;">DEVCOM Army Research Laboratory</span>, 2021.1-2021.12 <br />
-          Advisor: Prof. Qiang Ji, Prof. Suvranu De. </li>
-        <li><strong>Audio Signal Processing & Music Information Retrieval</strong> <br />
-          Research Assistant, <span style="font-weight: bold;">Audio Information Research Lab</span>, 2018.5-2018.9 <br />
-          Advisor: Prof. Zhiyao Duan. </li>
-        <li><strong>Quantum Entanglement in Four-Wave Mixing </strong> <br />
-          Undergraduate Research Assistant, <span style="font-weight: bold;">Shaanxi Key Laboratory of Photonics Technology for Information</span>, 2015.6-2016.1, 2016.6-2017.5 <br />
-          Advisor: Prof. Yanpeng Zhang. </li>
-        <div class="spanner"></div>
-      </div>
-    </div>
-
-  </div><!-- close page div -->
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <p style="text-align:right;font-size:12px;"> Last updated: Jan 2026 </p>
-    <p style="text-align:right;font-size:12px;"> Template adapted from <a href="https://yumingj.github.io/" target="_blank" style="font-size: 12px;">this website</a> </p>
-  </table>
 
   <p style="display: none;"><script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=-zcFBYdKzlIeLuAqzwHvqJgBI8-m6-8mcFHbmYjjcVk&cl=ffffff&w=a"></script></p>
 
-  <script xml:space="preserve" language="JavaScript">
-    hideallbibs();
-    hideallabs();
-  </script>
-
 </body>
-
 </html>
