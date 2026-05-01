@@ -26,15 +26,28 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 15px;
-      line-height: 1.6;
-      color: #2d3748;
-      background: #f7f8fa;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: #111827;
+      background: #eef1f5;
       -webkit-font-smoothing: antialiased;
     }
 
+    .hero-text p,
+    .news-item,
+    .pub-info {
+      color: #0f172a;
+    }
+
+    .hero-text p,
+    .news-item span,
+    .pub-info .pub-authors {
+      font-weight: 500;
+    }
+
     .container {
-      max-width: 1080px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 2.5em 1.5em;
     }
@@ -50,7 +63,7 @@
     }
 
     strong, b {
-      font-weight: 600;
+      font-weight: 700;
     }
 
     em, i {
@@ -59,7 +72,7 @@
 
     /* ── Hero / Bio Card ── */
     .hero {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.4);
       border-radius: 12px;
       padding: 2.5em;
       margin-bottom: 2em;
@@ -112,7 +125,7 @@
     .research-statement {
       font-size: 1em;
       line-height: 1.7;
-      color: #2d3748;
+      color: #1a202c;
     }
 
     /* ── News ── */
@@ -141,12 +154,25 @@
       font-size: 0.93em;
     }
 
+    .new-badge {
+      display: inline-block;
+      background: #b83232;
+      color: #fff;
+      font-size: 0.7em;
+      font-weight: 700;
+      padding: 0.1em 0.45em;
+      border-radius: 3px;
+      margin-left: 0.5em;
+      letter-spacing: 0.05em;
+      vertical-align: middle;
+    }
+
     .news-item:last-child {
       border-bottom: none;
     }
 
     .news-section {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.4);
       border-radius: 12px;
       padding: 1.5em 2em;
       box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
@@ -181,7 +207,7 @@
     }
 
     .pub-section {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.4);
       border-radius: 12px;
       padding: 1.5em 2em;
       box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
@@ -261,13 +287,13 @@
     /* ── Footer ── */
     .footer {
       text-align: right;
-      font-size: 0.8em;
-      color: #a0aec0;
-      margin-top: 1em;
+      font-size: 0.85em;
+      color: #64748b;
+      margin-top: 1.5em;
     }
 
     .footer a {
-      color: #a0aec0;
+      color: #64748b;
     }
 
     /* ── Responsive ── */
@@ -341,7 +367,7 @@
       <div class="news-list">
         <div class="news-item">
           <span class="news-date">Jun 2026</span>
-          <span>Three <strong>CVPR'26</strong> papers (two highlights, one workshop) on grounding human motion understanding with physics.</span>
+          <span>Three <strong>CVPR'26</strong> papers (two highlights, one workshop) on grounding human motion understanding with physics.<span class="new-badge">NEW</span></span>
         </div>
         <div class="news-item">
           <span class="news-date">Feb 2026</span>
@@ -479,7 +505,7 @@
 
     <!-- ── Footer ── -->
     <div class="footer">
-      <p>Last updated: Apr 2026</p>
+      <p>Last updated: Jun 2026</p>
     </div>
 
   </div>
