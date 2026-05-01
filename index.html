@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <title>Yufei Zhang - Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,7 +34,7 @@
     }
 
     .container {
-      max-width: 960px;
+      max-width: 1080px;
       margin: 0 auto;
       padding: 2.5em 1.5em;
     }
@@ -61,8 +62,8 @@
       background: #fff;
       border-radius: 12px;
       padding: 2.5em;
+      margin-bottom: 2em;
       box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
-      margin-bottom: 2.5em;
     }
 
     .hero-row {
@@ -93,11 +94,14 @@
       margin-bottom: 0.7em;
     }
 
+    .hero-text {
+      flex: 1;
+      min-width: 0;
+    }
+
     .hero-links {
       margin-top: 1em;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3em 1.2em;
+      font-size: 0.95em;
     }
 
     .hero-links a {
@@ -106,14 +110,59 @@
 
     /* ── Research Statement ── */
     .research-statement {
-      margin-top: 1.5em;
-      padding: 0.9em 1.2em;
-      border-left: 3px solid #2b6cb0;
-      background: #f7fafc;
-      border-radius: 0 6px 6px 0;
-      color: #4a5568;
-      font-size: 0.95em;
+      font-size: 1em;
       line-height: 1.7;
+      color: #2d3748;
+    }
+
+    /* ── News ── */
+    .news-list {
+      padding: 0 1.5em;
+      max-height: 12.5em;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #cbd5e0 transparent;
+    }
+
+    .news-list::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .news-list::-webkit-scrollbar-thumb {
+      background: #cbd5e0;
+      border-radius: 3px;
+    }
+
+    .news-item {
+      display: flex;
+      gap: 1em;
+      padding: 0.3em 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.93em;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5em 2em;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .news-section .news-list {
+      border-left: 3px solid #b83232;
+      padding-left: 1.2em;
+    }
+
+    .news-date {
+      flex-shrink: 0;
+      color: #b83232;
+      font-weight: 600;
+      font-size: 0.9em;
+      min-width: 5.5em;
     }
 
     /* ── Section Headings ── */
@@ -131,20 +180,29 @@
       margin-bottom: 2.5em;
     }
 
+    .pub-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5em 2em;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+    }
+
     .pub-card {
       display: flex;
       align-items: flex-start;
       gap: 1.8em;
-      background: #fff;
-      border-radius: 10px;
-      padding: 1.5em;
-      margin-bottom: 0.8em;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-      transition: box-shadow 0.2s;
+      padding: 1.5em 0;
+      border-bottom: 1px solid #f0f0f0;
+      transition: background 0.2s;
     }
 
-    .pub-card:hover {
-      box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    .pub-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0.5em;
+    }
+
+    .pub-card:first-child {
+      padding-top: 0.5em;
     }
 
     .pub-img {
@@ -247,7 +305,7 @@
 <body>
   <div class="container">
 
-    <!-- ── Hero ── -->
+    <!-- ── Main Two-Column Layout ── -->
     <div class="hero">
       <div class="hero-row">
         <div class="hero-photo">
@@ -259,26 +317,68 @@
             I am a Senior Research Scientist at <a href="https://www.bytedance.com/en/">ByteDance Inc</a>, working with the <a href="https://www.picoxr.com/global">PICO</a> team.
           </p>
           <p>
-            I graduated from <a href="https://www.rpi.edu/" target="_blank">Rensselaer Polytechnic Institute</a> and <a href="https://en.xjtu.edu.cn/" target="_blank">Xi'an Jiaotong University</a>.
+            I graduated from <a href="https://www.rpi.edu/" target="_blank">Rensselaer Polytechnic Institute</a> (Computer Engineering &amp; Applied Mathematics) and <a href="https://en.xjtu.edu.cn/" target="_blank">Xi'an Jiaotong University</a>.
             Previously, I was at <a href="https://myolab.ai/" target="_blank">MyoLab AI</a>, <a href="https://www.meta.com/research/" target="_blank">Meta Reality Labs</a>, and <a href="https://aws.amazon.com/" target="_blank">Amazon AWS</a>.
           </p>
           <p>
             I build <strong>Human-Embodied AI</strong> that perceives, understands, and emulates human behavior. My research integrates <strong>Physics</strong> and <strong>Probabilistic Modeling</strong> into scalable learning systems.
           </p>
           <div class="hero-links">
-            <a href="mailto:yufeizhang96@outlook.com" target="_blank">Email</a>
-            <a href="https://github.com/zhangy76" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/yufei-zhang-4b7b69152" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=gtVCkSgAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="mailto:yufeizhang96@outlook.com" target="_blank">Email</a> |
+            <a href="https://github.com/zhangy76" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/yufei-zhang-4b7b69152" target="_blank">LinkedIn</a> |
+            <a href="https://scholar.google.com/citations?user=gtVCkSgAAAAJ&hl=en" target="_blank">Google Scholar</a> |
             <a href="https://twitter.com/YufeiZhang0000" target="_blank">Twitter</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- ── News ── -->
+    <div class="section">
+      <h2 class="section-title">News</h2>
+      <div class="news-section">
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">Jun 2026</span>
+          <span>Three <strong>CVPR'26</strong> papers (two highlights, one workshop) on grounding human motion understanding with physics.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Feb 2026</span>
+          <span>One <strong>TMLR'26</strong> paper on discovering probabilistic relations with LLMs.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jul 2025</span>
+          <span>One <strong>ICCV'25</strong> paper on grounding 3D hand motion recovery with intuitive physics.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jul 2024</span>
+          <span>One <strong>ECCV'24</strong> paper on 3D hand reconstruction leveraging anatomy, biomechanics, physics priors, and probabilistic modeling.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Feb 2024</span>
+          <span>One <strong>CVPR'24</strong> paper on human dynamics estimation (motion+force) from monocular cameras.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Oct 2023</span>
+          <span>One <strong>WACV'24</strong> paper on integrating physics motion law for human motion prediction.</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jul 2023</span>
+          <span>One <strong>ICCV'23</strong> paper on 3D human body reconstruction from images with generic body knowledge and real-time uncertainty quantification (aleatoric &amp; epistemic).</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Jun 2023</span>
+          <span>One <strong>CVPR'23</strong> workshop paper on robust partial fingerprint recognition.</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
     <!-- ── Publications ── -->
     <div class="section">
-      <h2 class="section-title">Selected Publications</h2>
+      <h2 class="section-title">Selected Work</h2>
+      <div class="pub-section">
 
       <div class="pub-card" id="VideoHand">
         <div class="pub-img">
@@ -373,6 +473,7 @@
             <a href="https://openaccess.thecvf.com/content/CVPR2023W/Biometrics/supplemental/Zhang_Robust_Partial_Fingerprint_CVPRW_2023_supplemental.pdf" target="_blank">SupMat</a>
           </div>
         </div>
+      </div>
       </div>
     </div>
 
